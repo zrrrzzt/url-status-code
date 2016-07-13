@@ -16,7 +16,7 @@ $ npm i url-status-code
 'use strict'
 
 const urlStatusCode = require('./lib/check-url-status')
-const url = 'https://google.com'
+const url = 'https://www.npmjs.com'
 
 urlStatusCode(url, (error, statusCode) => {
   if (error) {
@@ -26,5 +26,5 @@ urlStatusCode(url, (error, statusCode) => {
   }
 })
 
-// => 302
+// => 200
 ```
