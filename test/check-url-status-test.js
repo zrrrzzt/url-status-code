@@ -21,23 +21,23 @@ tap.test('Returns error as expected', function (test) {
 })
 
 tap.test('Returns expected status code for https', function (test) {
-  const url = 'https://google.com'
+  const url = 'https://www.npmjs.com'
   checkUrlStatus(url, (error, statusCode) => {
     if (error) {
       throw error
     }
-    tap.equal(statusCode, 302, '302 OK')
+    tap.equal(statusCode, 200, '200 OK')
     test.done()
   })
 })
 
 tap.test('Returns expected status code for http', function (test) {
-  const url = 'http://google.com'
+  const url = 'http://www.npmjs.com'
   checkUrlStatus(url, (error, statusCode) => {
     if (error) {
       throw error
     }
-    tap.equal(statusCode, 302, '302 OK')
+    tap.equal(statusCode, 301, '301 OK')
     test.done()
   })
 })
