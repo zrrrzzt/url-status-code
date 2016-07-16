@@ -34,7 +34,7 @@
   "devDependencies": {
     "coveralls": "2.11.11",
     "standard": "7.1.2",
-    "tap": "6.1.1",
+    "tap": "6.2.0",
     "nsp": "2.6.1"
   }
 }
