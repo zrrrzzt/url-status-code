@@ -1,7 +1,7 @@
 {
   "name": "url-status-code",
   "description": "Get status code for url",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
@@ -36,5 +36,8 @@
     "standard": "8.0.0",
     "tap": "7.0.0",
     "nsp": "2.6.1"
+  },
+  "dependencies": {
+    "valid-url": "1.0.9"
   }
 }

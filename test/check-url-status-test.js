@@ -12,6 +12,15 @@ tap.test('Requires url', function (test) {
   })
 })
 
+tap.test('URL must be valid', function (test) {
+  const url = 'pysjepreik'
+  const expectedErrorMessage = 'Supplied url is not valid'
+  checkUrlStatus(url, (error, statusCode) => {
+    tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
+    test.done()
+  })
+})
+
 tap.test('Returns error as expected', function (test) {
   const url = 'http://detteerenurlsomsannsynligviseikkefinnes.no'
   checkUrlStatus(url, (error, statusCode) => {
