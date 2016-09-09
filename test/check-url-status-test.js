@@ -21,6 +21,15 @@ tap.test('URL must be valid', function (test) {
   })
 })
 
+tap.test('URL must have valid start', function (test) {
+  const url = 'http://https://www.google.com'
+  const expectedErrorMessage = 'Supplied url is not valid'
+  checkUrlStatus(url, (error, statusCode) => {
+    tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
+    test.done()
+  })
+})
+
 tap.test('Returns error as expected', function (test) {
   const url = 'http://detteerenurlsomsannsynligviseikkefinnes.no'
   checkUrlStatus(url, (error, statusCode) => {
