@@ -15,7 +15,7 @@ $ npm i url-status-code
 ```javascript
 'use strict'
 
-const urlStatusCode = require('./lib/check-url-status')
+const urlStatusCode = require('url-status-code')
 const url = 'https://www.npmjs.com'
 
 urlStatusCode(url, (error, statusCode) => {
