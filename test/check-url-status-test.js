@@ -5,7 +5,7 @@ const checkUrlStatus = require('../lib/check-url-status')
 
 tap.test('Requires url', function (test) {
   const url = false
-  const expectedErrorMessage = 'Missing required input: url'
+  const expectedErrorMessage = 'Missing required input: uri'
   checkUrlStatus(url, (error, statusCode) => {
     tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
     test.done()
@@ -14,7 +14,7 @@ tap.test('Requires url', function (test) {
 
 tap.test('URL must be valid', function (test) {
   const url = 'pysjepreik'
-  const expectedErrorMessage = 'Supplied url is not valid'
+  const expectedErrorMessage = 'Supplied uri is not valid'
   checkUrlStatus(url, (error, statusCode) => {
     tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
     test.done()
@@ -23,7 +23,7 @@ tap.test('URL must be valid', function (test) {
 
 tap.test('URL must have valid start', function (test) {
   const url = 'http://https://www.google.com'
-  const expectedErrorMessage = 'Supplied url is not valid'
+  const expectedErrorMessage = 'Supplied uri is not valid'
   checkUrlStatus(url, (error, statusCode) => {
     tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
     test.done()
