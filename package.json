@@ -1,7 +1,7 @@
 {
   "name": "url-status-code",
   "description": "Get status code for url",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/zrrrzzt/url-status-code",
   "engines": {
-    "node": ">=4.6.0"
+    "node": ">=4.6.1"
   },
   "main": "index.js",
   "scripts": {
