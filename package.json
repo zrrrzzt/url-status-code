@@ -32,10 +32,10 @@
     "setup": "npm install && node setup.js"
   },
   "devDependencies": {
-    "coveralls": "2.11.14",
-    "standard": "8.3.0",
-    "tap": "7.1.2",
-    "nsp": "2.6.1"
+    "coveralls": "2.11.15",
+    "standard": "8.5.0",
+    "tap": "8.0.0",
+    "nsp": "2.6.2"
   },
   "dependencies": {
     "valid-url": "1.0.9"
