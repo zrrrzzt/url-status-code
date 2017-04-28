@@ -32,7 +32,7 @@
     "setup": "npm install && node setup.js"
   },
   "devDependencies": {
-    "coveralls": "2.13.0",
+    "coveralls": "2.13.1",
     "standard": "10.0.2",
     "tap": "10.3.2",
     "nsp": "2.6.3"
