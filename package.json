@@ -26,16 +26,18 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "standard && nsp check && tap --reporter=spec test/*.js",
-    "coverage": "tap test/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix"
   },
   "devDependencies": {
+    "ava": "0.19.1",
     "coveralls": "2.13.1",
-    "standard": "10.0.2",
-    "tap": "10.3.2",
-    "nsp": "2.6.3"
+    "nsp": "2.6.3",
+    "nyc": "10.3.2",
+    "standard": "10.0.2"
   },
   "dependencies": {
     "valid-url": "1.0.9"
