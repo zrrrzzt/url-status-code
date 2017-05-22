@@ -1,7 +1,7 @@
 {
   "name": "url-status-code",
   "description": "Get status code for url",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
@@ -29,7 +29,7 @@
     "test": "standard && nsp check && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install && node setup.js"
+    "setup": "npm install"
   },
   "devDependencies": {
     "coveralls": "2.13.1",

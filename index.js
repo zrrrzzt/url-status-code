@@ -3,11 +3,13 @@
 const checkUrlStatus = require('./lib/check-url-status')
 
 module.exports = (url, callback) => {
-  checkUrlStatus(url, (error, statusCode) => {
-    if (error) {
-      return callback(error, null)
-    } else {
-      return callback(null, statusCode)
-    }
+  return new Promise((resolve, reject) => {
+    checkUrlStatus(url, (error, statusCode) => {
+      if (error) {
+        return callback ? callback(error, null) : reject(error)
+      } else {
+        return callback ? callback(null, statusCode) : resolve(statusCode)
+      }
+    })
   })
 }
