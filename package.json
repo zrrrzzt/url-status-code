@@ -33,11 +33,11 @@
     "standard-fix": "standard --fix"
   },
   "devDependencies": {
-    "ava": "0.21.0",
+    "ava": "0.22.0",
     "coveralls": "2.13.1",
-    "nsp": "2.6.3",
+    "nsp": "2.7.0",
     "nyc": "11.1.0",
-    "standard": "10.0.2"
+    "standard": "10.0.3"
   },
   "dependencies": {
     "valid-url": "1.0.9"
