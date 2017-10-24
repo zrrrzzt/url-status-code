@@ -33,7 +33,7 @@
     "standard-fix": "standard --fix"
   },
   "devDependencies": {
-    "ava": "0.22.0",
+    "ava": "0.23.0",
     "coveralls": "2.13.1",
     "nsp": "2.8.0",
     "nyc": "11.2.1",
