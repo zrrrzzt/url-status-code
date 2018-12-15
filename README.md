@@ -15,8 +15,7 @@ $ npm i url-status-code
 ```
 
 ## Usage
-```javascript
-'use strict'
+```JavaScript
 
 const urlStatusCode = require('url-status-code')
 const url = 'https://www.npmjs.com'
@@ -35,5 +34,3 @@ urlStatusCode(url, (error, statusCode) => {
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of url-status-code](https://robots.kebabstudios.party/url-status-code.png "Robohash image of url-status-code")
