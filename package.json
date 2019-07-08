@@ -34,7 +34,7 @@
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "devDependencies": {
-    "ava": "2.1.0",
+    "ava": "2.2.0",
     "coveralls": "3.0.4",
     "nyc": "14.1.1",
     "standard": "12.0.1"
