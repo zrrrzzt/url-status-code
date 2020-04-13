@@ -41,5 +41,9 @@
   },
   "dependencies": {
     "valid-url": "1.0.9"
-  }
+  },
+  "files": [
+    "lib/",
+    "index.js"
+  ]
 }
