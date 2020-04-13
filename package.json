@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/zrrrzzt/url-status-code#readme",
   "engines": {
-    "node": ">=8.14.0"
+    "node": ">=12.16.2"
   },
   "main": "index.js",
   "scripts": {
