@@ -1,5 +1,14 @@
-'use strict'
-
+(async () => {
+  const urlStatusCode = require('./index')
+  const url = 'https://www.npmjs.com'
+  try {
+    const status = await urlStatusCode(url)
+    console.log(status)
+  } catch (error) {
+    console.error(error)
+  }
+})()
+/*
 // const validUrl = require('valid-url')
 const urlStatusCode = require('./index')
 const url = 'http://www.npmjs.com'
@@ -14,3 +23,4 @@ urlStatusCode(url, (error, statusCode) => {
 })
 
 // console.log(validUrl.isWebUri(url))
+*/

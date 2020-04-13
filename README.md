@@ -15,6 +15,23 @@ $ npm i url-status-code
 ```
 
 ## Usage
+
+```JavaScript
+(async () => {
+  const urlStatusCode = require('url-status-code')
+  const url = 'https://www.npmjs.com'
+  try {
+    const status = await urlStatusCode(url)
+    console.log(status)
+  } catch (error) {
+    console.error(error)
+  }
+})()
+//=> 200
+```
+
+or you can use callback
+
 ```JavaScript
 
 const urlStatusCode = require('url-status-code')
